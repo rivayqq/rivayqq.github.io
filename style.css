@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+body{
+    background-color: pink;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar a{
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: blueviolet;
+    color: burlywood;
+    transition: all .9s;
+}
+
+.main{
+    margin-top: 60px;
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center center;
+}
+.about-text{
+    text-align: center;
+}
+
+.cards{
+    margin-top: 40px;
+    display: flex;
+   align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:pink;
+    box-shadow: dark;
+    margin: 5px;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all .5s;
+}
+.card img{
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.rerer{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ac input{
+    display: none;
+}
+
+.ac-content{
+    display: none;
+}
+
+.ac input:checked ~ .ac-content{
+    display: block;
+}
+
+
+
+.video-wrap{
+    position: absolute;
+    overflow: hidden;
+    min-height: 800px;
+    max-height: 800px;
+    display: block;
+    width: 100%;
+    max-width: 2560px;
+}
+
+.video-bg{
+    display: block;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    width: 100%;
+}
